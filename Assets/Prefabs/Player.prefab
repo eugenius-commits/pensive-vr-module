@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &556
+GameObject:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197}
+  - component: {fileID: 195}
+  - component: {fileID: 153}
+  - component: {fileID: 161}
+  - component: {fileID: 173}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_IconEnabled: 1
+  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &153
+CharacterController:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Radius: 0.3
+  m_Height: 1.76
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: -0.18, z: 0}
+  m_EnableOverlapRecovery: 0
+  m_EnableMultiRaycasting: 0
+  m_RaycastsPerMeter: 10
+  m_CollisionFlags: 0
+  m_LastGroundedTime: 0
+  m_Touching: []
+  m_MoveDirection: {x: 0, y: 0, z: 0}
+  m_NextMove: {x: 0, y: 0, z: 0}
+  m_ExternalMoveDirection: {x: 0, y: 0, z: 0}
+  m_PrevPosition: {x: 0, y: 0, z: 0}
+  m_NavMeshMove: 0
+  m_PushedRigidbodies: []
+  m_HoldRigidbodies: []
+  m_TurnAmount: 0
+  m_Acceleration: 0
+  m_SlideVelocity: {x: 0, y: 0, z: 0}
+  m_PointerRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_MovedThisFrame: 0
+  m_PrevTriggerContact: {instanceID: 0}
+  m_TriggerContact: {instanceID: 0}
+  m_TriggerEvents: []
+--- !u!114 &161
+OVRPlayerController:
+  m_ObjectHideFlags: 0
+  serializedVersion: 3
+  m_InitialYRotation: 180
+  m_Acceleration: 0.1
+  m_Damping: 0.3
+  m_BackAndSideDampen: 0.5
+  m_JumpForce: 0.3
+  m_GravityModifier: 0.379999995
+  m_EyesHeight: 1.776
+  m_EnableLinearMovement: 1
+  m_EnableRotation: 1
+  m_RotationAmount: 1.5
+  m_RotationRatchet: 0.0
+  m_CameraRoot: {fileID: 0}
+  m_HmdRotatesY: 1
+  m_SnapRotation: 0
+  m_SnapThreshold: 0.4
+  m_StepHeight: 0.349999994
+  m_UserEyeHeight: 0
+  m_PreferredEyeHeight: 0
+  m_StickMovement: 1
+  m_HaltUpdateMovement: 0
+  m_HaltUpdateRotation: 0
+  m_OverrideEyeHeight: 0
+  m_CustomEyeHeight: 0
+--- !u!114 &173
+OVRCameraRig:
+  m_ObjectHideFlags: 0
+  serializedVersion: 3
+  m_TrackingSpace: {fileID: 0}
+  m_UpdatedAnchors: []
+  m_ConfigureTracker: {fileID: 0}
+  m_CameraLeft: {fileID: 0}
+  m_CameraRight: {fileID: 0}
+  m_InitialState: 0
+  m_PlaybackCameraPath: {fileID: 0}
+  m_StopPlaybackOnDisable: 0
+  m_StopPlaybackOnDestroy: 0
+  m_LatencyMarker: {fileID: 0}
+  m_Latency: 0
+  m_PrevCamPose: {fileID: 0}
+  m_FrameCount: 0
+  m_PositionTrackingState: {fileID: 0}
+  m_LeftEyePosition: {x: -0.03263228, y: 0.01239999, z: 0.01459993}
+  m_LeftEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LeftEyeFieldOfView: 60
+  m_LeftEyeFovPort: {x: 0.875, y: 0.75}
+  m_RightEyePosition: {x: 0.03263228, y: 0.01239999, z: 0.01459993}
+  m_RightEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_RightEyeFieldOfView: 60
+  m_RightEyeFovPort: {x: 0.875, y: 0.75}
+  m_CenterEyePosition: {x: 0, y: 0.01239999, z: 0.01459993}
+  m_CenterEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_CenterEyeFieldOfView: 60
+  m_CenterEyeFovPort: {x: 0.875, y: 0.75}
+  m_CameraRootPosition: {x: 0, y: 0, z: 0}
+  m_CameraRootRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_CameraRootScale: {x: 1, y: 1, z: 1}
+--- !u!157 &195
+OVRCameraRig:
+  m_ObjectHideFlags: 0
+  serializedVersion: 3
+  m_TrackingSpace: {fileID: 0}
+  m_UpdatedAnchors: []
+  m_ConfigureTracker: {fileID: 0}
+  m_CameraLeft: {fileID: 0}
+  m_CameraRight: {fileID: 0}
+  m_InitialState: 0
+  m_PlaybackCameraPath: {fileID: 0}
+  m_StopPlaybackOnDisable: 0
+  m_StopPlaybackOnDestroy: 0
+  m_LatencyMarker: {fileID: 0}
+  m_Latency: 0
+  m_PrevCamPose: {fileID: 0}
+  m_FrameCount: 0
+  m_PositionTrackingState: {fileID: 0}
+  m_LeftEyePosition: {x: -0.03263228, y: 0.01239999, z: 0.01459993}
+  m_LeftEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LeftEyeFieldOfView: 60
+  m_LeftEyeFovPort: {x: 0.875, y: 0.75}
+  m_RightEyePosition: {x: 0.03263228, y: 0.01239999, z: 0.01459993}
+  m_RightEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_RightEyeFieldOfView: 60
+  m_RightEyeFovPort: {x: 0.875, y: 0.75}
+  m_CenterEyePosition: {x: 0, y: 0.01239999, z: 0.01459993}
+  m_CenterEyeRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_CenterEyeFieldOfView: 60
+  m_CenterEyeFovPort: {x: 0.875, y: 0.75}
+  m_CameraRootPosition: {x: 0, y: 0, z: 0}
+  m_CameraRootRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_CameraRootScale: {x: 1, y: 1, z: 1}
+--- !u!4 &197
+Transform:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}

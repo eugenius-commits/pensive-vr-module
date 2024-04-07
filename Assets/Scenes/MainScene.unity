@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unity version="2021.1.2f1">
+  <Scene>
+    <PhysicsSettings3D>
+      <LayerCollisionMatrix>
+        <CollisionLayer layer="0" name="Default">
+          <collisionLayer layer="1" enabled="true"/>
+          <collisionLayer layer="2" enabled="true"/>
+          <!-- Other collision layers -->
+        </CollisionLayer>
+        <!-- Other collision layers -->
+      </LayerCollisionMatrix>
+      <!-- Other physics settings -->
+    </PhysicsSettings3D>
+    <GameObject name="MainScene">
+      <!-- Camera setup -->
+      <Camera name="Main Camera" Tag="MainCamera">
+        <Transform Position="0 1.5 -2" Rotation="0 0 0"/>
+        <Camera Projection="Perspective" FieldOfView="60" NearPlane="0.3" FarPlane="1000" Depth="1"/>
+      </Camera>
+      
+      <!-- Environment setup -->
+      <GameObject name="Ground">
+        <Transform Position="0 0 0" Rotation="0 0 0" Scale="10 1 10"/>
+        <MeshRenderer Material="GroundMaterial"/>
+        <MeshFilter Mesh="Plane"/>
+        <BoxCollider Size="10 0.1 10" Center="0 0.05 0"/>
+      </GameObject>
+      
+      <!-- Teleportation points -->
+      <GameObject name="TeleportPoint1">
+        <Transform Position="-2 0 0"/>
+        <SphereCollider Radius="0.5"/>
+        <OVRTeleportDestination/>
+      </GameObject>
+      <GameObject name="TeleportPoint2">
+        <Transform Position="2 0 0"/>
+        <SphereCollider Radius="0.5"/>
+        <OVRTeleportDestination/>
+      </GameObject>
+      
+      <!-- Interactive objects -->
+      <GameObject name="InteractableObject">
+        <Transform Position="0 1 2"/>
+        <MeshRenderer Material="ObjectMaterial"/>
+        <MeshFilter Mesh="Cube"/>
+        <BoxCollider Size="1 1 1"/>
+        <Rigidbody Mass="1" UseGravity="true" IsKinematic="false"/>
+        <InteractableObjectScript/>
+      </GameObject>
+      
+      <!-- UI elements -->
+      <Canvas name="UI">
+        <RectTransform Position="0 0 0" Size="1920 1080"/>
+        <CanvasRenderer/>
+        <Text Text="Hello, World!" FontSize="36" Color="White"/>
+      </Canvas>
+    </GameObject>
+  </Scene>
+</unity>
